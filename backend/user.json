@@ -47,6 +47,24 @@
       "name": "Hulk",
       "realName": "Bruce Banner",
       "universe": "Earth-616"
+    },
+    {
+      "name": "Black Panther",
+      "alias": "T'Challa",
+      "power": "Force, agilité, technologie",
+      "id": 9
+    },
+    {
+      "name": "Black Panther",
+      "alias": "T'Challa",
+      "power": "Force, agilité, technologie",
+      "id": 10
+    },
+    {
+      "name": "Black Panther",
+      "alias": "T'Challa",
+      "power": "Force, agilité, technologie",
+      "id": 11
     }
   ]
 }
