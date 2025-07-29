@@ -105,7 +105,7 @@ export const deleteCharacter = (req, res) => {
 			if (index === -1)
 				return res.status(404).json({ error: "Personnage non trouvé" });
 
-			const removed = json.characters.splice(index, 1); // Supprime
+			const removed = json.characters.splice(index, 1); 
 
 			fs.writeFile(filePath, JSON.stringify(json, null, 2), "utf8", err => {
 				if (err) return res.status(500).json({ error: "Erreur écriture fichier" });

@@ -65,6 +65,18 @@
       "alias": "T'Challa",
       "power": "Force, agilité, technologie",
       "id": 11
+    },
+    {
+      "id": 12,
+      "name": "Wolverine",
+      "realName": "Logan ",
+      "universe": "Earth-1216"
+    },
+    {
+      "id": 13,
+      "name": "spider-man",
+      "realName": "Miles Morales ",
+      "universe": "Earth-1z216"
     }
   ]
 }
