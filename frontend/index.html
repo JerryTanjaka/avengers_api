@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vite + React</title>
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <!-- Breakpoint helper, en dehors du #root -->
+        <div class="pointer-events-none absolute bottom-4 left-4 z-50 text-xs font-bold text-gray-600">
+            <!-- Extra Small (XS)  -->
+            <span class="sm:hidden">XS</span>
+
+            <!-- Small (SM)  -->
+            <span class="hidden sm:block md:hidden">SM</span>
+
+            <!-- Medium (MD)  -->
+            <span class="hidden md:block lg:hidden">MD</span>
+
+            <!-- Large (LG)  -->
+            <span class="hidden lg:block xl:hidden">LG</span>
+
+            <!-- Extra Large -->
+            <span class="hidden xl:block 2xl:hidden">XL</span>
+
+            <!-- 2XL -->
+            <span class="hidden 2xl:block">2XL</span>
+        </div>
+
+        <script type="module" src="/src/main.jsx"></script>
+    </body>
+</html>
