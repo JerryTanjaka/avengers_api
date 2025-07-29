@@ -13,12 +13,6 @@
       "universe": "Earth-616"
     },
     {
-      "id": 3,
-      "name": "Captain America",
-      "realName": "Steve Rogers",
-      "universe": "Earth-616"
-    },
-    {
       "id": 4,
       "name": "Black Widow",
       "realName": "Natasha Romanoff",
@@ -67,16 +61,16 @@
       "id": 11
     },
     {
-      "id": 12,
-      "name": "Wolverine",
-      "realName": "Logan ",
-      "universe": "Earth-1216"
-    },
-    {
       "id": 13,
       "name": "spider-man",
       "realName": "Miles Morales ",
       "universe": "Earth-1z216"
+    },
+    {
+      "name": "THOR",
+      "realName": "le Dieu",
+      "universe": "Univers",
+      "id": 14
     }
   ]
 }

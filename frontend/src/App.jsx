@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import CharacterCard from "./components/CharacterCard";
 import CharacterForm from "./components/CharacterForm";
 import { Navbar } from "./components/Navbar";
-import SearchBar from "./components/SearchBar";
 
 function App() {
     const [characters, setCharacters] = useState([]);
@@ -50,12 +49,11 @@ function App() {
     };
 
     const filtered = characters.filter((char) => char.name.toLowerCase().includes(searchTerm.toLowerCase()));
-
     return (
-        <div className="min-h-screen overflow-x-hidden bg-gray-300">
+        <div className="min-h-screen overflow-x-hidden bg-gray-200">
             <Navbar searchTerm={searchTerm} onChange={setSearchTerm} />
             <div className="p-6">
-                <div className="mx-auto mb-6 grid max-w-[100vw] gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <div className="mx-auto mb-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                     {filtered.map((char) => (
                         <CharacterCard key={char.id} character={char} onDelete={handleDelete} onUpdate={handleUpdate} />
                     ))}
