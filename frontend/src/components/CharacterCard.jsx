@@ -1,6 +1,6 @@
 function CharacterCard({ character, onDelete, onUpdate }) {
     return (
-        <div className="flex text-white items-center justify-between rounded-xl bg-gray-800 p-4 shadow-lg shadow-cyan-900/65 transition duration-100 ease-in-out hover:scale-105">
+        <div className="flex text-white items-center justify-between rounded-xl bg-gray-800 p-4 shadow-lg shadow-gray-950/30 transition duration-100 ease-in-out hover:scale-105">
             <div>
                 <h2 className="text-xl font-bold">{character.name}</h2>
                 <p className="text-sm text-gray-200">{character.realName || character.alias}</p>

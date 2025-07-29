@@ -12,7 +12,7 @@ export const Navbar = ({ searchTerm, onChange }) => {
                         {/* Logo Avengers à gauche */}
                         <div className="mt-3 flex items-center space-x-2">
                             <img src={logo} alt="Logo Avengers" className="h-24 w-24" loading="lazy" decoding="async" />
-                            <span className="bg-gradient-to-r from-white via-white to-purple-300 bg-clip-text text-2xl font-extrabold tracking-wide text-transparent uppercase select-none">Marvel</span>
+                            <span className="bg-white bg-clip-text text-4xl font-extrabold tracking-wide text-transparent uppercase select-none">Marvel</span>
                         </div>
 
                         {/* Menu centré, caché sur mobile */}
@@ -37,7 +37,7 @@ export const Navbar = ({ searchTerm, onChange }) => {
                                         <line x1="21" y1="21" x2="16.65" y2="16.65" />
                                     </svg>
                                 </span>
-                                <SearchBar searchTerm={searchTerm} onChange={onChange} className="p w-full rounded-md bg-white py-2 pl-10 text-gray-800 focus:ring-2 focus:ring-sky-400 focus:outline-none" />
+                                <SearchBar searchTerm={searchTerm} onChange={onChange} className="p w-full rounded-md bg-white py-2 pl-10 text-gray-800 focus:ring-4 focus:ring-purple-800 focus:outline-none" />
                             </div>
                         </div>
 

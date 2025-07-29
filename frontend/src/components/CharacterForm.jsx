@@ -1,35 +1,59 @@
-function CharacterForm({ newCharacter, onChange, onAdd }) {
+function CharacterForm({ newCharacter, onChange, onAdd, onCancel }) {
+  const handleChange = (e) => {
+    onChange({ ...newCharacter, [e.target.name]: e.target.value });
+  };
+
   return (
-    <div className="bg-white p-4 rounded shadow">
-      <h2 className="text-lg font-semibold mb-2">Ajouter un Avenger</h2>
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+        onAdd();
+      }}
+      className="space-y-4"
+    >
       <input
+        name="name"
         type="text"
-        placeholder="Nom"
-        className="w-full p-2 mb-2 border rounded"
         value={newCharacter.name}
-        onChange={(e) => onChange({ ...newCharacter, name: e.target.value })}
+        onChange={handleChange}
+        placeholder="Nom du héros"
+        className="w-full p-2 border border-gray-300 rounded"
+        required
       />
       <input
+        name="realName"
         type="text"
-        placeholder="Nom réel / Alias"
-        className="w-full p-2 mb-2 border rounded"
         value={newCharacter.realName}
-        onChange={(e) => onChange({ ...newCharacter, realName: e.target.value })}
+        onChange={handleChange}
+        placeholder="Nom réel"
+        className="w-full p-2 border border-gray-300 rounded"
+        required
       />
       <input
+        name="universe"
         type="text"
-        placeholder="Univers"
-        className="w-full p-2 mb-2 border rounded"
         value={newCharacter.universe}
-        onChange={(e) => onChange({ ...newCharacter, universe: e.target.value })}
+        onChange={handleChange}
+        placeholder="Univers"
+        className="w-full p-2 border border-gray-300 rounded"
+        required
       />
-      <button
-        onClick={onAdd}
-        className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
-      >
-        Ajouter
-      </button>
-    </div>
+      <div className="flex justify-between">
+        <button
+          type="submit"
+          className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
+        >
+          Ajouter
+        </button>
+        <button
+          type="button"
+          onClick={onCancel}
+          className="text-gray-600 hover:underline"
+        >
+          Annuler
+        </button>
+      </div>
+    </form>
   );
 }
 
