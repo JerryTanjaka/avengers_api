@@ -7,18 +7,6 @@
       "universe": "Earth-616"
     },
     {
-      "id": 2,
-      "name": "Iron Man",
-      "realName": "Tony Stark",
-      "universe": "Earth-616"
-    },
-    {
-      "id": 4,
-      "name": "Black Widow",
-      "realName": "Natasha Romanoff",
-      "universe": "Earth-616"
-    },
-    {
       "id": 5,
       "name": "Black Panther",
       "realName": "T'Challa",
@@ -65,12 +53,6 @@
       "name": "spider-man",
       "realName": "Miles Morales ",
       "universe": "Earth-1z216"
-    },
-    {
-      "name": "THOR",
-      "realName": "le Dieu",
-      "universe": "Univers",
-      "id": 14
     },
     {
       "name": "Spider-Man(accros the spider verse)",
