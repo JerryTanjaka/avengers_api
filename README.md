@@ -1,5 +1,5 @@
 
-# Avengers API
+# Avengers Full Stack
 
 Une mini application React pour explorer, ajouter, modifier et supprimer des personnages de l’univers Marvel via une API REST.
 
